@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin"); //injects js in html
+
 module.exports = {
   module: {
     rules: [
@@ -14,4 +16,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }),
+  ],
 };
