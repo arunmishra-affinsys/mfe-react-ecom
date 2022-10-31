@@ -1,11 +1,6 @@
 name: deploy-containers
 
-on:
-  push:
-    branches:
-      - master
-    paths:
-      - "packages/container/**"
+on: [workflow_dispatch]
 
 defaults:
   run:
